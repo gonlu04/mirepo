@@ -1,66 +1,103 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html5>
     <head>
-        <meta charsert="utf-8" />
-        <title>Primera Página Web</title>
-        <meta name="description" content="Esta es mi primera página Web" />
+        <meta charset=utf-8 />
+        <link rel="shortcut icon" href="#">
+        <title>eCloud Colombia SAS</title>
+        <meta name="description" content="Pasión por la Innovación" charset=utf-8/>
         <meta name="author" content="Gonlu04" />
-        <meta name="keywords" contect="Mi primera Página, Mi primer sitio" />
+        <meta name="keywords" contect="Home Website eCloud" />
+        <meta name="viewport" content="initial-scale=1" />
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
-           <img src="Images/Logo-Final-eCloud-Color.png" >
-            <h2>Título de texto</h2>
+        <header class="cabecera">
+                 <h1>eCloud Colombia SAS</h1>
+                 <img src="Images/Logo-Final-eCloud-Color.png" >
+                 <h3>Pasión por la Innovación</h3>
         </header>
-
-        <nav>
+        <br>
+        <nabvbar class="menu">
             <ul>
-                <li>Principal</li>
-                <li>Ayuda</li>
-                <li>Contacto</li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes.html">Quiénes Somos</a></li>
+                <li><a href="contact.asp">Soluciones</a></li>
+                <li><a href="about.asp">Servicios</a></li>
+                <li><a href="about.asp">Casos de éxito</a></li>
+                <li><a href="about.asp">Aliados</a></li>
             </ul> 
-        </nav>
+        </nabvbar>
+        <br>
+        <div class="imagen1">
+            <img class="mySlides" class="imagen1__img" src="Images/Teletrabajo.png" alt="Teletrabajo">
+            <div class="imagen1__overlay">
+                <div class="imagen1__titulo">Teletrabajo como Servicio</div>
+                <p class="imagen1__descripcion">
+                    Contáctenos para mayor información
+                </p>
+            </div>
+        </div>
+        <div class="imagen2">
+            <img class="mySlides" class="imagen2__img" src="Images/Avaya Cloud3.png" alt="Avaya">
+            <div class="imagen2__overlay">
+                <div class="imagen2__titulo">Comunicaciones como Servicio</div>
+                <p class="imagen2__descripcion">
+                    Contáctenos para mayor información
+                </p>
+            </div>
+        </div>
+        <div class="imagen3">
+            <img class="mySlides" src="Images/cloud-computingnew1.jpg" alt="DRP">
+            <div class="imagen3__overlay">
+                <div class="imagen3__titulo">DRP en la Nube</div>
+                <p class="imagen3__descripcion">
+                    Contáctenos para mayor información
+                </p>
+            </div>
+        </div>
         <section>
-            <article>
-
-                <hgroup>
-                    <h1>Título del primer artículo</h1>
-                    <h2>Subtítulo del primer artículo</h2>
-                </hgroup>
-                <time datetime="13-12-2020">Publicado el 13-12-2020</time>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus quisquam dolore eum hic corporis veritatis at dignissimos veniam. Nobis rem consectetur exercitationem mollitia saepe, eligendi a vitae at deserunt ullam!</p>
-                <footer>
-                    <p>Comentarios(0)</p>
-                    <a href="https://e-cloud.com.co">Visita mi sitio Web</a>
-                </footer>
-            </article>
-            <article>
-                <hgroup>
-                    <h1>Título del segundo artículo</h1>
-                    <h2>Subtítulo del sefgundo artículo</h2>
-                </hgroup>
-                <time datetime="13-12-2020">Publicado el 13-12-2020</time>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aliquid distinctio voluptatibus? Officiis sint aut pariatur consequatur iure natus quod iusto laborum, fugiat saepe soluta quos modi consequuntur numquam. Quasi!</p>
-                <footer>
-                    <p>Comentarios(0)</p>
-                    <a href="https://e-cloud.com.co">Visita mi sitio Web</a>
-                </footer>
-            </article>
-
-
+            <h1>Inicio</h1>
+            <br><br>
+            <img src="Images/Badge.eps_2080_1876.png" class="badge">
+            <br>
+            <h2>eCloud es su aliado ideal para adoptar la Nube Pública y Migrar sus Cargas de Trabajo al menor costo y tiempo posibles</h2>
+            <br><br>
+            <h3>Visítenos en nuestras redes Sociales:</h3>
         </section>
-        <aside>
-            <blockquote cite="https://www.e-cloud.com.co">
-                Mensaje1
-            </blockquote>
-            <blockquote>
-                Mensaje2
-            </blockquote>
-            Archivo
-            Acerca de
-        </aside>
+        <br>
+        <redes>
+            <a href="https://www.facebook.com/eCloudColombia/" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/company/52124059/admin/" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/ecloud_sas/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/eCloud_SAS" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </redes>
+        <script>
+            var myIndex = 0;
+            carousel();
+               
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3500); 
+                }
+        </script>
+        <br><br>
         <footer>
-            Derechos reservados 2010-2021
+            <h3>Teléfonos: +57(1) 533-2810 / (318) 315-3003</h3>
+            <h3>Correo Electrónico: contacto@e-cloud.com.co</h3>
+            <h3>Dirección en Bogotá: Calle 106 #53-39, Ofic. 704</h3>
+            <h3>Dirección en Medellín: Cra 43A #5A-113, Ofic. 714</h3>
+            <br>
+            <h4>eCloud Colombia SAS Copyright© 2021</h4>
+            <br>
         </footer>
     </body>
 </html>
